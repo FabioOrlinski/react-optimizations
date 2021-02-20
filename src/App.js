@@ -1,25 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from "react";
+import initialMenus from "./menus.json"
+import './App.css'
 
-function App() {
+const App = () => {
+
+  const [count, setCount] = useState(0);
+  const [menus] = useState(initialMenus);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+      <h1>Count: {count}</h1>
+      <button onClick={() => setCount(count + 1)}>Add</button>
+      <Menu menus={menus} />
+    </>
+  );
+}
+
+const Menu = ({ menus }) => {
+
+  useEffect(() => {
+    console.count("menu called");
+  })
+
+  return (
+    <div className="menu" >
+      {menus.map((menu, index) => <Card menu={menu} key={index} />)}
     </div>
   );
+}
+
+const Card = ({ menu: { title, price, photo } }) => {
+
+  useEffect(() => {
+    console.count("single card called");
+  })
+
+  return (
+    <div className="card" >
+      <h1>{title}</h1>
+      <div>{price}</div>
+      <img src={photo} alt={title} />
+    </div>
+  )
 }
 
 export default App;

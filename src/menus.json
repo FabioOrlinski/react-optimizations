@@ -1,0 +1,52 @@
+[
+    {
+        "title": "Butter Chicken",
+        "price": 15.14,
+        "photo": "/images/butter-chicken.jpg"
+    },
+    {
+        "title": "Lasagne",
+        "price": 22.15,
+        "photo": "/images/lasagne.jpg"
+    },
+    {
+        "title": "Spaghetti",
+        "price": 22.15,
+        "photo": "/images/spaghetti.jpg"
+    },
+    {
+        "title": "Carrot Cake",
+        "price": 22.15,
+        "photo": "/images/carrot-cake.jpg"
+    },
+    {
+        "title": "Beef Hotpot",
+        "price": 22.15,
+        "photo": "/images/beef-hotpot.jpg"
+    },
+    {
+        "title": "Butter Chicken",
+        "price": 15.14,
+        "photo": "/images/butter-chicken.jpg"
+    },
+    {
+        "title": "Lasagne",
+        "price": 22.15,
+        "photo": "/images/lasagne.jpg"
+    },
+    {
+        "title": "Spaghetti",
+        "price": 22.15,
+        "photo": "/images/spaghetti.jpg"
+    },
+    {
+        "title": "Carrot Cake",
+        "price": 22.15,
+        "photo": "/images/carrot-cake.jpg"
+    },
+    {
+        "title": "Beef Hotpot",
+        "price": 22.15,
+        "photo": "/images/beef-hotpot.jpg"
+    }
+]
