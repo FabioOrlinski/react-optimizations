@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, memo } from "react";
 import initialMenus from "./menus.json"
 import './App.css'
 
@@ -16,7 +16,7 @@ const App = () => {
   );
 }
 
-const Menu = ({ menus }) => {
+const Menu = memo(({ menus }) => {
 
   useEffect(() => {
     console.count("menu called");
@@ -27,7 +27,7 @@ const Menu = ({ menus }) => {
       {menus.map((menu, index) => <Card menu={menu} key={index} />)}
     </div>
   );
-}
+})
 
 const Card = ({ menu: { title, price, photo } }) => {
 
